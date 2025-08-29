@@ -1,0 +1,27 @@
+[package]
+name = "boost_assign"
+description = "Boost C++ library boost_assign packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_assign"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_assign"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_array = { version = "0.1.0", path = "../boost_array" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_move = { version = "0.1.0", path = "../boost_move" }
+boost_preprocessor = { version = "0.1.0", path = "../boost_preprocessor" }
+boost_ptr_container = { version = "0.1.0", path = "../boost_ptr_container" }
+boost_range = { version = "0.1.0", path = "../boost_range" }
+boost_static_assert = { version = "0.1.0", path = "../boost_static_assert" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+boost_tuple = { version = "0.1.0", path = "../boost_tuple" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
